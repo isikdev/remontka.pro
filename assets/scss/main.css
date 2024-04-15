@@ -540,6 +540,10 @@ button {
   margin: 50px 0;
   display: flex;
 }
+.zone__item iframe {
+  width: 100%;
+  border-radius: 56px;
+}
 .zone__links {
   background: #2E3233;
   border-top-left-radius: 12px;
