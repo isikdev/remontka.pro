@@ -13,6 +13,6 @@ $(document).ready(function () {
         $accBody.slideToggle();
         $(this).find('.arrow').toggleClass('down');
         $('.question__acc-body').not($accBody).slideUp();
-        $('.question__acc-head').not($(this)).find('.arrow').removeClass('down'); 
+        $('.question__acc-head').not($(this)).find('.arrow').removeClass('down');
     });
 });
