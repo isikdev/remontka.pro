@@ -8,8 +8,10 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    font-size: 14px;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 19px;
     font-weight: 600;
+    line-height: 22px;
     &:hover {
         background-color: #760d25;
     }
@@ -33,9 +35,9 @@
     }
 }
 .base__subtitle {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 18px;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 21px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 24px;
     text-align: center;
 }

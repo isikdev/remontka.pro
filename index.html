@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description"
+            content="Ремонт компьютерной техники Москва и МО">
+        <meta name="keywords" content="Ремонт компьютеров
+                Компьютерный сервис
+                Техническая поддержка ПК
+                Восстановление данных
+                Обслуживание компьютеров
+                Устранение неисправностей ПК
+                Замена комплектующих
+                Диагностика ПК
+                Ремонт ноутбуков
+                Сервисный центр в Москве
+                Мастер по ремонту ПК
+                Компьютерная помощь
+                Ремонт ПК на дому
+                Восстановление работоспособности ПК
+                Профессиональный ремонт компьютерной техники">
+        <meta name="author"
+            content="Ремонт компьютерной техники sistemnik.online">
         <title>Ремонт компьютерной техники Москва и МО</title>
-        <link rel="stylesheet" href="./assets/js/slick/slick-theme.css">
-        <link rel="stylesheet" href="./assets/js/slick/slick.css">
-        <link rel="stylesheet" href="./assets/scss/main.css">
-        <link rel="apple-touch-icon" sizes="180x180"
+        <link href="./assets/scss/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/font/stylesheet.css">
+        <link rel="apple-touch-icon"
             href="./assets/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32"
             href="./assets/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16"
             href="./assets/img/favicon/favicon-16x16.png">
         <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+        <link rel="preload" href="./assets/img/info.webp" as="image">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     </head>
+
     <body>
+        <div class="modalbox">
+            <div class="container">
+                <div class="modalbox__content">
+                    <div class="modalbox__close">
+                        <button class="get__popup modalbox__close-item"><img
+                                src="./assets/img/ico/close.svg"
+                                alt="close"></button>
+                    </div>
+                    <div class="modalbox__intro">
+                        <h1>Введите Ваш номер</h1>
+                        <form action="./assets/php/telegram.php" method="POST">
+                            <input placeholder="+7 XXX XXX XX XX"
+                                class="telephone__id modalbox__input"
+                                name="user__phone" required>
+                            <button
+                                class="modal__send btn__red">Отправить</button>
+                            <div class="modalbox__subtitle">
+                                <input type="checkbox" name="modalbox__subtitle"
+                                    id="modalbox__subtitle" checked>
+                                <p>Я даю согласие на обработку моих персональных
+                                    данных в соответствии с <a target="_blank"
+                                        href="https://sistemnik.online/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf">Политикой
+                                        конфиденциальности</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header>
             <div class="navbar">
                 <div class="container">
@@ -23,28 +78,26 @@
                         <div class="navbar__brand">
                             <div class="navbar__logo">
                                 <a href="./index.html"><img
-                                        src="./assets/img/logo.png"
+                                        src="./assets/img/logo.webp"
                                         alt="logo"></a>
                             </div>
                             <div class="navbar__slogan">
-                                <p>Ремонт компьютерной техники<br>
-                                    <span>Москва и МО</span></p>
+                                <p>Sistmenik</p>
                             </div>
                         </div>
                         <div class="navbar__social">
                             <div class="navbar__social-tel">
-                                <div class="navbar__social-tel-ico">
-                                    <img src="./assets/img/ico/tel_small.svg"
-                                        alt="tel">
-                                </div>
-                                <a href="tel:+7 925 555 35 35">+7 925 555 35 35
-                                    <span>смотреть</span></a>
-                            </div>
+                                <div class="navbar__social-tel-ico"><img
+                                        src="./assets/img/ico/tel_small.svg"
+                                        alt="tel"></div><a
+                                    href="tel:+79255553535">+7 925 555 35 35
+                                    <span
+                                        class="open__tel">смотреть</span></a></div>
                             <div class="navbar__social-icons">
-                                <a href="#"><img
+                                <a href="https://t.me/websensei1"><img
                                         src="./assets/img/ico/telegram.svg"
                                         alt="telegram"></a>
-                                <a href="#"><img
+                                <a href="https://kwork.ru/seller"><img
                                         src="./assets/img/ico/whatsapp.svg"
                                         alt="whatsapp"></a>
                             </div>
@@ -58,20 +111,17 @@
                         <div class="navbar__brand">
                             <div class="navbar__logo">
                                 <a href="./index.html"><img
-                                        src="./assets/img/logo.png"
+                                        src="./assets/img/logo.webp"
                                         alt="logo"></a>
                             </div>
                         </div>
-                        <div class="navbar__social-tel">
-                            <a href="tel:+7 925 555 35 35">+7 925 555 35 35
-                                <span>смотреть</span></a>
-                        </div>
+                        <div class="navbar__social-tel"><a
+                                href="tel:+79255553535">+7 925 555 35 35
+                                <span>смотреть</span></a></div>
                         <div class="navbar__social-icons">
-                            <a href="#"><img
-                                    src="./assets/img/ico/telegram.svg"
+                            <a href="#"><img src="./assets/img/ico/telegram.svg"
                                     alt="telegram"></a>
-                            <a href="#"><img
-                                    src="./assets/img/ico/whatsapp.svg"
+                            <a href="#"><img src="./assets/img/ico/whatsapp.svg"
                                     alt="whatsapp"></a>
                         </div>
                     </div>
@@ -82,71 +132,68 @@
             <section class="info">
                 <div class="container">
                     <div class="info__content">
-                        <div class="info__intro">
-                            <h1>Экспертный ремонт компьютерной техники
-                                у вас дома в течение
-                                24 часов</h1>
-                        </div>
-                        <div class="info__cards">
-                            <div class="info__card-wrapper">
-                                <div class="info__card-item">
-                                    <div class="info__card-img">
-                                        <img
-                                            src="./assets/img/ico/diagnostics_red.svg"
-                                            alt="Диагностика">
+                        <div class="info__intro-wrapper">
+                            <div class="info__intro">
+                                <h2>Экспертный ремонт компьютерной техники у вас
+                                    дома в течение 24 часов</h2>
+                            </div>
+                            <div class="info__img-mob">
+                                <img src="./assets/img/nout.webp" alt="nout"
+                                    loading="lazy">
+                            </div>
+                            <div class="info__cards">
+                                <div class="info__card-wrapper">
+                                    <div class="info__card-item">
+                                        <div class="info__card-img"><img
+                                                src="./assets/img/ico/diagnostics_red.svg"
+                                                alt="Диагностика"
+                                                loading="lazy"></div>
+                                        <div class="info__card-txt">
+                                            <p>Выезд и диагностика бесплатно</p>
+                                        </div>
                                     </div>
-                                    <div class="info__card-txt">
-                                        <p>
-                                            Выезд и диагностика
-                                            бесплатно
-                                        </p>
+                                    <div class="info__card-item">
+                                        <div class="info__card-img"><img
+                                                src="./assets/img/ico/price_red.svg"
+                                                alt="Диагностика"
+                                                loading="lazy"></div>
+                                        <div class="info__card-txt">
+                                            <p>Цены от 490 рублей</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="info__card-item">
-                                    <div class="info__card-img">
-                                        <img
-                                            src="./assets/img/ico/price_red.svg"
-                                            alt="Диагностика">
+                                <div class="info__card-wrapper">
+                                    <div class="info__card-item">
+                                        <div class="info__card-img"><img
+                                                src="./assets/img/ico/discount_red.svg"
+                                                alt="Диагностика"
+                                                loading="lazy"></div>
+                                        <div class="info__card-txt">
+                                            <p>Скидка 20% на первое
+                                                обращение</p>
+                                        </div>
                                     </div>
-                                    <div class="info__card-txt">
-                                        <p>
-                                            Цены от 490
-                                            рублей
-                                        </p>
+                                    <div class="info__card-item">
+                                        <div class="info__card-img"><img
+                                                src="./assets/img/ico/location_red.svg"
+                                                alt="Диагностика"
+                                                loading="lazy"></div>
+                                        <div class="info__card-txt">
+                                            <p>Выезжаем по всей Москве и
+                                                Московской
+                                                области</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="info__card-wrapper">
-                                <div class="info__card-item">
-                                    <div class="info__card-img">
-                                        <img
-                                            src="./assets/img/ico/discount_red.svg"
-                                            alt="Диагностика">
-                                    </div>
-                                    <div class="info__card-txt">
-                                        <p>
-                                            Скидка 20% на первое
-                                            обращение
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="info__card-item">
-                                    <div class="info__card-img">
-                                        <img
-                                            src="./assets/img/ico/location_red.svg"
-                                            alt="Диагностика">
-                                    </div>
-                                    <div class="info__card-txt">
-                                        <p>
-                                            Выезжаем по всей Москве
-                                            и Московской области
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="info__link">
+                                <button class="get__popup btn__red">Вызвать
+                                    мастера</button>
                             </div>
                         </div>
-                        <div class="info__link">
-                            <a href="#" class="btn__red">Вызвать мастера</a>
+                        <div class="info__img">
+                            <img src="./assets/img/nout.webp" alt="nout"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -155,135 +202,120 @@
                 <div class="container">
                     <div class="choise__content">
                         <div class="choise__intro">
-                            <h1 class="base__title">
-                                Почему Нас Выбирают По Всей Москве и Московской
-                                Области?<br>
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                        </div>
+                            <h2 class="base__title">Почему Нас Выбирают По
+                                Всей
+                                Москве и Московской Области?<br><span>. .
+                                    .</span></h2></div>
                         <div class="choise__cards-wrapper">
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img src="./assets/img/ico/time_black.svg"
-                                        alt="time">
-                                </div>
+                                <div class="choise__card-ico"><img
+                                        src="./assets/img/ico/time_black.svg"
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Быстрый
-                                        и надежный нервис:</h1>
-                                    <p>
-                                        . . .<br>
-                                        Гарантируем прибытие мастера в течение 2
-                                        часов после вашего вызова в рабочее
-                                        время.
-                                    </p>
+                                    <h2>Быстрый и надежный нервис:</h2>
+                                    <p>. . .
+                                        <br>Гарантируем прибытие мастера в
+                                        течение 2 часов после вашего вызова
+                                        в
+                                        рабочее время.</p>
                                 </div>
                             </div>
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img src="./assets/img/ico/price_black.svg"
-                                        alt="time">
-                                </div>
+                                <div class="choise__card-ico"><img
+                                        src="./assets/img/ico/price_black.svg"
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Прозрачное ценообразование: </h1>
-                                    <p>
-                                        . . .<br>
-                                        Цены от 490 рублей без скрытых платежей.
-                                        Вы знаете стоимость ремонта заранее.
-                                        Кнопка whatsapp и телеграм - расскажите
-                                        что у вас сломалось.
-                                    </p>
+                                    <h2>Прозрачное ценообразование:</h2>
+                                    <p>. . .
+                                        <br>Цены от 490 рублей без скрытых
+                                        платежей. Вы знаете стоимость
+                                        ремонта
+                                        заранее. Кнопка <a target="_blank"
+                                            class="whatsapp__link"
+                                            href="https://wa.me/tel:93838928901">whatsapp</a>
+                                        и
+                                        <a target="_blank"
+                                            class="telegram__link"
+                                            href="https://t.me/websensei1">telegram</a>
+                                        -
+                                        расскажите что у вас сломалось.</p>
                                 </div>
                             </div>
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img
+                                <div class="choise__card-ico"><img
                                         src="./assets/img/ico/delivery_black.svg"
-                                        alt="time">
-                                </div>
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Бесплатная диагностика и выезд:</h1>
-                                    <p>
-                                        . . .<br>
-                                        Мы не берем плату за выезд и диагностику
-                                        — платите только за ремонт.
-                                    </p>
+                                    <h2>Бесплатная диагностика и выезд:</h2>
+                                    <p>. . .
+                                        <br>Мы не берем плату за выезд и
+                                        диагностику — платите только за
+                                        ремонт.</p>
                                 </div>
                             </div>
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img
+                                <div class="choise__card-ico"><img
                                         src="./assets/img/ico/discount_black.svg"
-                                        alt="time">
-                                </div>
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Скидка на
-                                        первое обращение:</h1>
-                                    <p>
-                                        . . .<br>
-                                        Получите 20% скидку на ваш первый
+                                    <h2>Скидка на первое обращение:</h2>
+                                    <p>. . .
+                                        <br>Получите 20% скидку на ваш
+                                        первый
                                         ремонт. Заботимся о наших новых
-                                        клиентах.
-                                    </p>
+                                        клиентах.</p>
                                 </div>
                             </div>
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img src="./assets/img/ico/master_black.svg"
-                                        alt="time">
-                                </div>
+                                <div class="choise__card-ico"><img
+                                        src="./assets/img/ico/master_black.svg"
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Опытные
-                                        и сертифицированные мастера:
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Наши мастера прошли сертификацию и
-                                        регулярно повышают свою квалификацию.
-                                    </p>
+                                    <h2>Опытные и сертифицированные
+                                        мастера:</h2>
+                                    <p>. . .
+                                        <br>Наши мастера прошли сертификацию
+                                        и
+                                        регулярно повышают свою
+                                        квалификацию.</p>
                                 </div>
                             </div>
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img
+                                <div class="choise__card-ico"><img
                                         src="./assets/img/ico/avialability_black.svg"
-                                        alt="time">
-                                </div>
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Удобство
-                                        и доступность: </h1>
-                                    <p>
-                                        . . . <br>
-                                        Обслуживаем всю территорию Москвы и
+                                    <h2>Удобство и доступность:</h2>
+                                    <p>. . .
+                                        <br>Обслуживаем всю территорию
+                                        Москвы и
                                         Московской области, работаем
-                                        круглосуточно
-                                        CTA: Заказать бесплатную диагностику
-                                    </p>
+                                        круглосуточно CTA: <a
+                                            class="get__popup choise__link-get"
+                                            href="#">Заказать
+                                            бесплатную
+                                            диагностику</a></p>
                                 </div>
                             </div>
                             <div class="choise__card-item">
-                                <div class="choise__card-ico">
-                                    <img src="./assets/img/ico/time_black.svg"
-                                        alt="time">
-                                </div>
+                                <div class="choise__card-ico"><img
+                                        src="./assets/img/ico/time_black.svg"
+                                        alt="time"></div>
                                 <div class="choise__card-txt">
-                                    <h1>Гарантия на
-                                        ремонт:
-
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Мы предоставляем годовую гарантию на
-                                        запчасти и все выполненные работы
-                                    </p>
+                                    <h2>Гарантия на ремонт:</h2>
+                                    <p>. . .
+                                        <br>Мы предоставляем годовую
+                                        гарантию на
+                                        запчасти и все выполненные
+                                        работы</p>
                                 </div>
                             </div>
-                            <div class="choise__card-black choise__card-item">
-                                <img src="./assets/img/diagnostic.png"
+                            <div
+                                class="choise__card-black choise__card-item"><img
+                                    src="./assets/img/diagnostic.webp"
                                     alt="diagnostic">
-                                <button class="btn__red"> Заказать бесплатную
-                                    диагностику</button>
+                                <button class="btn__red get__popup">Заказать
+                                    бесплатную диагностику</button>
                             </div>
                         </div>
                     </div>
@@ -293,191 +325,171 @@
                 <div class="container">
                     <div class="save__content">
                         <div class="save__intro">
-                            <h1 class="base__title">
-                                Так Мы Спасаем
-                                Вашу Технику
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                        </div>
+                            <h2 class="base__title">Так Мы Спасаем Вашу
+                                Технику
+                                <span>. . .</span></h2></div>
                         <div class="save__cards-wrapper">
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>01</h1>
+                                        <img src="./assets/img/ico/a_savecard/1_tel.png" alt="tel">    
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Заявка
-                                        и Консультация:
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Оставьте заявку на сайте или позвоните
-                                        по нашему бесплатному номеру. Наш
-                                        консультант свяжется с вами в течение 5
-                                        минут, чтобы уточнить детали и
-                                        запланировать визит мастера. - Иконка
-                                        веб-формы или телефонного звонка.
-                                    </p>
+                                    <h2>Заявка и Консультация:</h2>
+                                    <p>. . .
+                                        <br>Оставьте заявку на сайте или
+                                        позвоните по нашему бесплатному
+                                        номеру.
+                                        Наш консультант свяжется с вами в
+                                        течение 5 минут, чтобы уточнить
+                                        детали и
+                                        запланировать визит мастера. -
+                                        Иконка
+                                        веб-формы или телефонного
+                                        звонка.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>02</h1>
+                                        <img src="./assets/img/ico/a_savecard/2_sms.png" alt="2">    
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Подготовка к Визиту</h1>
-                                    <p>
-                                        . . .<br>
-                                        Перед визитом мы отправим вам SMS и
+                                    <h2>Подготовка к Визиту</h2>
+                                    <p>. . .
+                                        <br>Перед визитом мы отправим вам
+                                        SMS и
                                         электронное письмо с информацией о
                                         мастере, включая его имя, а также
-                                        предполагаемое время прибытия. - Иконка
-                                        SMS или электронного письма.
-                                    </p>
+                                        предполагаемое время прибытия. -
+                                        Иконка
+                                        SMS или электронного письма.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>03</h1>
+                                        <img src="./assets/img/ico/a_savecard/3_tool.png" alt="3">    
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Бесплатная Диагностика на Месте
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Мастер проведет полную диагностику,
+                                    <h2>Бесплатная Диагностика на Месте</h2>
+                                    <p>. . .
+                                        <br>Мастер проведет полную
+                                        диагностику,
                                         объяснит причину неисправности и
-                                        предложит оптимальные варианты ремонта с
+                                        предложит оптимальные варианты
+                                        ремонта с
                                         точной оценкой стоимости. - Иконка
-                                        инструментов или диагностики.
-                                    </p>
+                                        инструментов или диагностики.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>04</h1>
+                                        <img src="./assets/img/ico/a_savecard/4_contract.png" alt="4">
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Согласование
-                                        Плана Ремонта
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Вы решаете, какие работы будут
+                                    <h2>Согласование Плана Ремонта</h2>
+                                    <p>. . .
+                                        <br>Вы решаете, какие работы будут
                                         выполнены. Мы не начинаем ремонт без
                                         вашего полного согласия на условия и
-                                        стоимость. - Иконка договора.
-                                    </p>
+                                        стоимость. - Иконка договора.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>05</h1>
+                                        <img src="./assets/img/ico/a_savecard/5_time.png" alt="5">
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Выполнение
-                                        Ремонта
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Мастер использует только
-                                        сертифицированные запчасти и современные
+                                    <h2>Выполнение Ремонта</h2>
+                                    <p>. . .
+                                        <br>Мастер использует только
+                                        сертифицированные запчасти и
+                                        современные
                                         инструменты для ремонта. Вся работа
                                         занимает обычно не более нескольких
                                         часов. - Иконка гаечного ключа или
-                                        часов.
-                                    </p>
+                                        часов.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>06</h1>
+                                        <img src="./assets/img/ico/a_savecard/6_test.png" alt="6">    
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Проверка и Тестирование
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        После ремонта мастер проведет полное
-                                        тестирование, чтобы убедиться, что все
-                                        работает идеально. - Иконка проверки или
-                                        теста.
-                                    </p>
+                                    <h2>Проверка и Тестирование</h2>
+                                    <p>. . .
+                                        <br>После ремонта мастер проведет
+                                        полное
+                                        тестирование, чтобы убедиться, что
+                                        все
+                                        работает идеально. - Иконка проверки
+                                        или
+                                        теста.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
                                 <div class="save__card-head">
                                     <div class="save__card-next">
-                                        <p>Шаг</p>
-                                        <img src="./assets/img/ico/next.svg"
-                                            alt="next">
-                                    </div>
+                                        <p>Шаг</p><img
+                                            src="./assets/img/ico/next.svg"
+                                            alt="next"></div>
                                     <div class="save__card-number">
-                                        <h1>07</h1>
+                                        <img src="./assets/img/ico/a_savecard/7_garanty.png" alt="7">    
                                     </div>
                                 </div>
                                 <div class="save__card-body">
-                                    <h1>Гарантия
-                                        и Поддержка
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Вы получаете гарантийный талон на
-                                        выполненные работы. Если у вас возникнут
-                                        вопросы или дополнительные потребности,
+                                    <h2>Гарантия и Поддержка</h2>
+                                    <p>. . .
+                                        <br>Вы получаете гарантийный талон
+                                        на
+                                        выполненные работы. Если у вас
+                                        возникнут
+                                        вопросы или дополнительные
+                                        потребности,
                                         наша служба поддержки всегда к вашим
                                         услугам. - Иконка гарантии или
-                                        поддержки.
-                                    </p>
+                                        поддержки.</p>
                                 </div>
                             </div>
-                            <div class="save__card-black save__card-item">
-                                <img src="./assets/img/technique.png"
+                            <div
+                                class="save__card-black save__card-item"><img
+                                    src="./assets/img/technique.webp"
                                     alt="technique">
-                                <button class="btn__red"> Вызвать
+                                <button class="btn__red get__popup">Вызвать
                                     мастера</button>
                             </div>
                         </div>
@@ -488,62 +500,63 @@
                 <div class="container">
                     <div class="price__content">
                         <div class="price__intro">
-                            <h1 class="base__title">
-                                Понятные
-                                Цены на Ремонт
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Найдите Решение Вашей Проблемы. Мы стремимся к
-                                полной прозрачности в наших ценах.
-                                Ниже вы найдете детальный список проблем и
-                                соответствующих им цен на услуги.
-                            </p>
+                            <h2 class="base__title">Понятные Цены на Ремонт
+                                <span>. . .</span></h2>
+                            <p class="base__subtitle">Найдите Решение Вашей
+                                Проблемы. Мы стремимся к полной прозрачности
+                                в
+                                наших ценах. Ниже вы найдете детальный
+                                список
+                                проблем и соответствующих им цен на
+                                услуги.</p>
                         </div>
                         <div class="price__table">
                             <div class="price__content">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th class="table_top-left-td"></th>
+                                            <th
+                                                class="table_top-left-td"></th>
                                             <th>Проблема</th>
                                             <th>Диагностические работы</th>
-                                            <th class="table_top-right-td">Цена
+                                            <th
+                                                class="table_top-right-td">Цена
                                                 от</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/power_1.svg"
                                                     alt="Не включается"></td>
                                             <td>Не включается</td>
-                                            <td>Проверка питания, материнской
+                                            <td>Проверка питания,
+                                                материнской
                                                 платы и т.д</td>
                                             <td>2000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/virus_2.svg"
                                                     alt="Вирусы"></td>
                                             <td>Вирусы</td>
-                                            <td>Сканирование, удаление вирусов и
+                                            <td>Сканирование, удаление
+                                                вирусов и
                                                 установка антивируса</td>
                                             <td
                                                 class="table__right-td">1000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/slowwork_3.svg"
                                                     alt="Медленная работа"></td>
                                             <td>Медленная работа</td>
-                                            <td>Оптимизация системы, увеличение
+                                            <td>Оптимизация системы,
+                                                увеличение
                                                 памяти и т.д.</td>
                                             <td>1500₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/display_4.svg"
                                                     alt="Проблемы с дисплеем"></td>
@@ -553,26 +566,28 @@
                                             <td
                                                 class="table__right-td">2500₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/memory_5.svg"
                                                     alt="Повреждение данных"></td>
                                             <td>Повреждение данных</td>
-                                            <td>Восстановление данных, ремонт
+                                            <td>Восстановление данных,
+                                                ремонт
                                                 жесткого диска</td>
                                             <td>3000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/keyboard_6.svg"
                                                     alt="Не работает клавиатура"></td>
                                             <td>Не работает клавиатура</td>
-                                            <td>Диагностика соединений, замена
+                                            <td>Диагностика соединений,
+                                                замена
                                                 клавиатуры</td>
                                             <td
                                                 class="table__right-td">1000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/audio_7.svg"
                                                     alt="Проблемы со звуком"></td>
@@ -582,17 +597,18 @@
                                                 карты</td>
                                             <td>2000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/wifi_8.svg"
                                                     alt="Проблемы с Wi-Fi"></td>
                                             <td>Проблемы с Wi-Fi</td>
-                                            <td>Диагностика сетевых настроек,
+                                            <td>Диагностика сетевых
+                                                настроек,
                                                 ремонт Wi-Fi адаптера</td>
                                             <td
                                                 class="table__right-td">2000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/temp_9.svg"
                                                     alt="Перегревается"></td>
@@ -602,11 +618,12 @@
                                                 охлаждения</td>
                                             <td>2000₽</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="get__popup">
                                             <td class="table_last-td"><img
                                                     src="./assets/img/ico/pricelist/usb_10.svg"
                                                     alt="Не читает USB-устройства"></td>
-                                            <td>Не читает USB-устройства</td>
+                                            <td>Не читает
+                                                USB-устройства</td>
                                             <td>Проверка USB-портов, ремонт
                                                 контроллера USB</td>
                                             <td
@@ -617,21 +634,20 @@
                             </div>
                         </div>
                         <div class="price__exclam">
-                            <div class="price__exclam-intro">
-                                <img src="./assets/img/ico/exclam.svg"
+                            <div class="price__exclam-intro"><img
+                                    src="./assets/img/ico/exclam.svg"
                                     alt="exclam">
-                                <p>
-                                    Цены указаны ориентировочно и могут
+                                <p>Цены указаны ориентировочно и могут
                                     варьироваться в зависимости от
-                                    конкретной модели и сложности работы.
-                                    Окончательная стоимость ремонта
-                                    определяется после бесплатной
-                                    диагностики на месте. Мы гарантируем
-                                    отсутствие скрытых платежей.
-                                </p>
+                                    конкретной
+                                    модели и сложности работы. Окончательная
+                                    стоимость ремонта определяется после
+                                    бесплатной диагностики на месте. Мы
+                                    гарантируем отсутствие скрытых
+                                    платежей.</p>
                             </div>
                             <div class="price__exclam-btn">
-                                <button class="btn__red">Вызвать
+                                <button class="btn__red get__popup">Вызвать
                                     мастера</button>
                             </div>
                         </div>
@@ -641,163 +657,135 @@
             <section class="price__mob">
                 <div class="container">
                     <div class="price__mob-intro">
-                        <h1 class="base__title">
-                            Понятные
-                            Цены на Ремонт
-                            <span>
-                                . . .
-                            </span>
-                        </h1>
-                        <p class="base__subtitle">
-                            Найдите Решение Вашей Проблемы. Мы стремимся к
-                            полной прозрачности в наших ценах.
-                            Ниже вы найдете детальный список проблем и
-                            соответствующих им цен на услуги.
-                        </p>
+                        <h2 class="base__title">Понятные Цены на Ремонт
+                            <span>.
+                                . .</span></h2>
+                        <p class="base__subtitle">Найдите Решение Вашей
+                            Проблемы. Мы стремимся к полной прозрачности в
+                            наших
+                            ценах. Ниже вы найдете детальный список проблем
+                            и
+                            соответствующих им цен на услуги.</p>
                     </div>
                     <div class="price__mob-wrapper">
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/power_1.svg"
-                                    alt="Не включается">
-                            </div>
+                                    alt="Не включается"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Не включается</h1>
-                                <p>Проверка питания, материнской платы и т.д</p>
-                                <h3>2000₽</h3>
-                            </div>
+                                <h2>Не включается</h2>
+                                <p>Проверка питания, материнской платы и
+                                    т.д</p>
+                                <h3>2000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/virus_2.svg"
-                                    alt="Вирусы">
-                            </div>
+                                    alt="Вирусы"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Вирусы </h1>
-                                <p>Сканирование, удаление вирусов и установка
+                                <h2>Вирусы</h2>
+                                <p>Сканирование, удаление вирусов и
+                                    установка
                                     антивируса</p>
-                                <h3>1000₽</h3>
-                            </div>
+                                <h3>1000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/slowwork_3.svg"
-                                    alt="Медленная работа">
-                            </div>
+                                    alt="Медленная работа"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Медленная работа</h1>
+                                <h2>Медленная работа</h2>
                                 <p>Оптимизация системы, увеличение памяти и
                                     т.д.</p>
-                                <h3>1500₽</h3>
-                            </div>
+                                <h3>1500₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/display_4.svg"
-                                    alt="Проблемы с дисплеем">
-                            </div>
+                                    alt="Проблемы с дисплеем"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Проблемы с дисплеем</h1>
-                                <p>Замена экрана или ремонт подсветки </p>
-                                <h3>2500₽</h3>
-                            </div>
+                                <h2>Проблемы с дисплеем</h2>
+                                <p>Замена экрана или ремонт подсветки</p>
+                                <h3>2500₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/memory_5.svg"
-                                    alt="Повреждение данных">
-                            </div>
+                                    alt="Повреждение данных"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Повреждение данных</h1>
+                                <h2>Повреждение данных</h2>
                                 <p>Восстановление данных, ремонт жесткого
                                     диска</p>
-                                <h3>3000₽</h3>
-                            </div>
+                                <h3>3000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/keyboard_6.svg"
-                                    alt="Не работает клавиатура">
-                            </div>
+                                    alt="Не работает клавиатура"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Не работает клавиатура</h1>
-                                <p>Диагностика соединений, замена клавиатуры
-                                </p>
-                                <h3>1000₽</h3>
-                            </div>
+                                <h2>Не работает клавиатура</h2>
+                                <p>Диагностика соединений, замена
+                                    клавиатуры</p>
+                                <h3>1000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
                                     src="./assets/img/ico/pricelist/audio_7.svg"
-                                    alt="Проблемы со звуком">
-                            </div>
+                                    alt="Проблемы со звуком"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Проблемы со звуком</h1>
-                                <p> Проверка аудио-выходов, драйверов, ремонт
+                                <h2>Проблемы со звуком</h2>
+                                <p>Проверка аудио-выходов, драйверов, ремонт
                                     звуковой карты</p>
-                                <h3>2000₽</h3>
-                            </div>
+                                <h3>2000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img src="./assets/img/ico/pricelist/wifi_8.svg"
-                                    alt="Проблемы с Wi-Fi">
-                            </div>
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
+                                    src="./assets/img/ico/pricelist/wifi_8.svg"
+                                    alt="Проблемы с Wi-Fi"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Проблемы с Wi-Fi</h1>
-                                <p> Диагностика сетевых настроек, ремонт Wi-Fi
+                                <h2>Проблемы с Wi-Fi</h2>
+                                <p>Диагностика сетевых настроек, ремонт
+                                    Wi-Fi
                                     адаптера</p>
-                                <h3>2000₽</h3>
-                            </div>
+                                <h3>2000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img src="./assets/img/ico/pricelist/temp_9.svg"
-                                    alt="Перегревается">
-                            </div>
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
+                                    src="./assets/img/ico/pricelist/temp_9.svg"
+                                    alt="Перегревается"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Перегревается</h1>
-                                <p>Чистка от пыли, замена термопасты, проверка
-                                    системы охлаждения </p>
-                                <h3>2000₽</h3>
-                            </div>
+                                <h2>Перегревается</h2>
+                                <p>Чистка от пыли, замена термопасты,
+                                    проверка
+                                    системы охлаждения</p>
+                                <h3>2000₽</h3></div>
                         </div>
-                        <div class="price__mob-item">
-                            <div class="price__mob-item-img">
-                                <img src="./assets/img/ico/pricelist/usb_10.svg"
-                                    alt="Не читает USB-устройства">
-                            </div>
+                        <div class="price__mob-item get__popup">
+                            <div class="price__mob-item-img"><img
+                                    src="./assets/img/ico/pricelist/usb_10.svg"
+                                    alt="Не читает USB-устройства"></div>
                             <div class="price__mob-item-txt">
-                                <h1>Не читает USB-устройства</h1>
-                                <p>Проверка USB-портов, ремонт контроллера USB
-                                </p>
-                                <h3>2000₽</h3>
-                            </div>
+                                <h2>Не читает USB-устройства</h2>
+                                <p>Проверка USB-портов, ремонт контроллера
+                                    USB</p>
+                                <h3>2000₽</h3></div>
                         </div>
                     </div>
                     <div class="price__exclam">
-                        <div class="price__exclam-intro">
-                            <img src="./assets/img/ico/exclam.svg"
+                        <div class="price__exclam-intro"><img
+                                src="./assets/img/ico/exclam.svg"
                                 alt="exclam">
-                            <p>
-                                Цены указаны ориентировочно и могут
-                                варьироваться в зависимости от
-                                конкретной модели и сложности работы.
-                                Окончательная стоимость ремонта
-                                определяется после бесплатной
-                                диагностики на месте. Мы гарантируем
-                                отсутствие скрытых платежей.
-                            </p>
+                            <p>Цены указаны ориентировочно и могут
+                                варьироваться
+                                в зависимости от конкретной модели и
+                                сложности
+                                работы. Окончательная стоимость ремонта
+                                определяется после бесплатной диагностики на
+                                месте. Мы гарантируем отсутствие скрытых
+                                платежей.</p>
                         </div>
                         <div class="price__exclam-btn">
-                            <button class="btn__red">Вызвать
+                            <button class="btn__red get__popup">Вызвать
                                 мастера</button>
                         </div>
                     </div>
@@ -807,68 +795,65 @@
                 <div class="container">
                     <div class="zone__content">
                         <div class="zone__intro">
-                            <h1 class="base__title">
-                                Наши Зоны
-                                Обслуживания:
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Наша команда готова приехать к вам и
-                                предоставить профессиональные услуги по ремонту
-                                в любую точку
-                                Москвы и Московской области. Ниже вы найдете
-                                карту с обозначенными зонами обслуживания.
-                            </p>
+                            <h2 class="base__title">Наши Зоны Обслуживания:
+                                <span>. . .</span></h2>
+                            <p class="base__subtitle">Наша команда готова
+                                приехать к вам и предоставить
+                                профессиональные
+                                услуги по ремонту в любую точку Москвы и
+                                Московской области. Ниже вы найдете карту с
+                                обозначенными зонами обслуживания.</p>
                         </div>
                         <div class="zone__maps">
                             <div class="zone__item">
-                                <div
-                                        style="position:relative;overflow:hidden;">
-                                        <iframe
-                                            src="https://yandex.uz/map-widget/v1/?ll=38.430269%2C55.707910&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA0NBIx0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCIKDcF_G0IV4R9eQg%2C%2C&z=8.14"
-                                            width="800" height="800"
-                                            frameborder="1"
-                                            allowfullscreen="true"
-                                            style="position:relative;"></iframe></div>
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309199.6814191584!2d35.035144773024605!3d55.58325344524487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab231b0c3c5d9%3A0x910cb3c03bdef242!2sMoscow%20Oblast%2C%20Russia!5e0!3m2!1sen!2s!4v1713459530794!5m2!1sen!2s" width="800" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
                             </div>
                             <div class="zone__links">
                                 <div class="zone__maps-intro">
-                                    <h1>Список городов</h1>
-                                </div>
+                                    <h2>Список городов</h2></div>
                                 <div class="zone__nav">
                                     <nav>
-                                        <ul>
-                                            <li><a href="#">Балашиха</a></li>
-                                            <li><a href="#">Бронницы</a></li>
+                                        <ul class="zone__nav-links-random">
+                                            <li><a
+                                                    href="#">Балашиха</a></li>
+                                            <li><a
+                                                    href="#">Бронницы</a></li>
                                             <li><a href="#">Верея</a></li>
                                             <li><a href="#">Видное</a></li>
-                                            <li><a href="#">Волоколамск</a></li>
-                                            <li><a href="#">Воскресенск</a></li>
-                                            <li><a href="#">Высоковск</a></li>
-                                            <li><a href="#">Голицыно</a></li>
-                                            <li><a href="#">Дзержинский</a></li>
+                                            <li><a
+                                                    href="#">Волоколамск</a></li>
+                                            <li><a
+                                                    href="#">Воскресенск</a></li>
+                                            <li><a
+                                                    href="#">Высоковск</a></li>
+                                            <li><a
+                                                    href="#">Голицыно</a></li>
+                                            <li><a
+                                                    href="#">Дзержинский</a></li>
                                             <li><a href="#">Дмитров</a></li>
                                             <li><a
                                                     href="#">Долгопрудный</a></li>
-                                            <li><a href="#">Домодедово</a></li>
+                                            <li><a
+                                                    href="#">Домодедово</a></li>
                                             <li><a href="#">Дрезна</a></li>
                                             <li><a href="#">Дубна</a></li>
-                                            <li><a href="#">Егорьевск</a></li>
+                                            <li><a
+                                                    href="#">Егорьевск</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <div class="zone__form">
                                     <div class="zone__form-intro">
-                                        <h1>Операторы готовы принять ваш
-                                            заказ</h1>
-                                        <div class="zone__form-tel">
-                                            <img
+                                        <h2>Операторы готовы принять ваш
+                                            заказ</h2>
+                                        <div class="zone__form-tel"><img
                                                 src="./assets/img/ico/whatsapp-black.svg"
-                                                alt="tel">
-                                            <a href="#">+7 925 555 35 35</a>
-                                        </div>
+                                                alt="tel"> <a
+                                                href="tel:+7925-555-35-35">+7
+                                                925
+                                                555 35 35</a></div>
                                         <div class="zone__request">
                                             <form
                                                 action="./assets/php/telegram.php"
@@ -876,14 +861,29 @@
                                                 <input type="tel"
                                                     placeholder="Введите ваш номер"
                                                     name="user__phone"
-                                                    class="telephone__id"
+                                                    class="telephone__id zone__request-input-item"
                                                     id="telephone">
-                                                <input type="text"
+                                                <input
                                                     placeholder="Опишите вашу проблему"
-                                                    name="user__problem">
-                                                <button class="btn__red"
+                                                    name="user__problem"
+                                                    class="zone__request-input-item">
+                                                <button
+                                                    class="btn__red get__popup"
                                                     type="submit">Вызвать
                                                     мастера</button>
+                                            </form>
+                                            <form action="#" id="political">
+                                                <input type="checkbox"
+                                                    name="political"
+                                                    id="politca" checked>
+                                                <label for="politca">Я даю
+                                                    согласие на
+                                                    обработку моих персональных
+                                                    данных в
+                                                    соответствии с <a
+                                                        target="_blank"
+                                                        href="https://sistemnik.online/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf">Политикой
+                                                        конфиденциальности</a></label>
                                             </form>
                                         </div>
                                     </div>
@@ -897,36 +897,32 @@
                 <div class="container">
                     <div class="reviews__content">
                         <div class="reviews__intro">
-                            <h1 class="base__title">
-                                Отзывы Наших Клиентов
-                                в WhatsApp
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Все отзывы являются реальными и от клиентов,
-                                которые
-                                уже воспользовались нашими услугами
-                            </p>
+                            <h2 class="base__title">Отзывы Наших Клиентов в
+                                WhatsApp <span>. . .</span></h2>
+                            <p class="base__subtitle">Все отзывы являются
+                                реальными и от клиентов, которые уже
+                                воспользовались нашими услугами</p>
                         </div>
                         <div class="reviews__slick">
                             <button class="slick__prev"><img
                                     src="./assets/img/ico/slider-prev.svg"
                                     alt="Previous"></button>
                             <div class="reviews__slick-wrapper">
-                                <div class="reviews__slick-img-item">
-                                    <img src="./assets/img/review/1_1.png"
-                                        alt="1">
-                                </div>
-                                <div class="reviews__slick-img-item">
-                                    <img src="./assets/img/review/1_1.png"
-                                        alt="1">
-                                </div>
-                                <div class="reviews__slick-img-item">
-                                    <img src="./assets/img/review/1_1.png"
-                                        alt="1">
-                                </div>
+                                <div class="reviews__slick-img-item"><img
+                                        src="./assets/img/review/1.webp"
+                                        alt="1"></div>
+                                <div class="reviews__slick-img-item"><img
+                                        src="./assets/img/review/2.webp"
+                                        alt="2"></div>
+                                <div class="reviews__slick-img-item"><img
+                                        src="./assets/img/review/3.webp"
+                                        alt="3"></div>
+                                <div class="reviews__slick-img-item"><img
+                                        src="./assets/img/review/4.webp"
+                                        alt="4"></div>
+                                <div class="reviews__slick-img-item"><img
+                                        src="./assets/img/review/5.webp"
+                                        alt="5"></div>
                             </div>
                             <button class="slick__next"><img
                                     src="./assets/img/ico/slider-next.svg"
@@ -934,12 +930,13 @@
                         </div>
                         <div class="reviews__links">
                             <div class="reviews__link-item">
-                                <button class="btn__red">Оставьте свой отзыв<br>
-                                    в WhatsApp</button>
+                                <button class="btn__red get__popup">Оставьте
+                                    свой отзыв
+                                    <br>в WhatsApp</button>
                             </div>
-                            <div class="reviews__qr">
-                                <img src="./assets/img/qr.png" alt="qr">
-                            </div>
+                            <div class="reviews__qr"><img
+                                    src="./assets/img/qr.webp"
+                                    alt="qr"></div>
                         </div>
                     </div>
                 </div>
@@ -948,44 +945,73 @@
                 <div class="container">
                     <div class="reviews__content">
                         <div class="reviews__intro">
-                            <h1 class="base__title">
-                                Видео Отзывы наших
-                                довольных клиентов
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                        </div>
-                        <div class="reviews__slick">
-                            <button class="slick__prev"><img
+                            <h2 class="base__title">Видео Отзывы наших
+                                довольных
+                                клиентов <span>. . .</span></h2></div>
+                        <div class="reviews__slick-video">
+                            <button class="slick__prev-video"><img
                                     src="./assets/img/ico/slider-prev.svg"
                                     alt="Previous"></button>
-                            <div class="reviews__slick-wrapper">
+                            <div class="reviews__slick-wrapper-video">
                                 <div class="reviews__slick-img-item">
-                                    <img src="./assets/img/review/2_1.png"
-                                        alt="1">
+                                    <iframe width="320" height="400"
+                                        src="https://www.youtube.com/embed/LLWZHk7KJks?si=b-lfv6HQyUOTywST"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen></iframe>
                                 </div>
                                 <div class="reviews__slick-img-item">
-                                    <img src="./assets/img/review/2_1.png"
-                                        alt="1">
+                                    <iframe width="320" height="400"
+                                        src="https://www.youtube.com/embed/hvnY_466mVg?si=npd006MUo7v3K3bD"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen></iframe>
                                 </div>
                                 <div class="reviews__slick-img-item">
-                                    <img src="./assets/img/review/2_1.png"
-                                        alt="1">
+                                    <iframe width="320" height="400"
+                                        src="https://www.youtube.com/embed/a5pbGXyZoA4?si=Tdd7kfdpY7bM97CC"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="reviews__slick-img-item">
+                                    <iframe width="320" height="400"
+                                        src="https://www.youtube.com/embed/LvFB1jmgw2E?si=e7xgnKK03UDI04Zf"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="reviews__slick-img-item">
+                                    <iframe width="320" height="400"
+                                        src="https://www.youtube.com/embed/oKYjTjpwGx4?si=TgXeEcDOXEe13-nM"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen></iframe>
                                 </div>
                             </div>
-                            <button class="slick__next"><img
+                            <button class="slick__next-video"><img
                                     src="./assets/img/ico/slider-next.svg"
                                     alt="Next"></button>
                         </div>
                         <div class="reviews__links">
                             <div class="reviews__link-item">
-                                <button class="btn__red">Оставьте свой отзыв<br>
-                                    в WhatsApp</button>
+                                <button class="btn__red get__popup">Оставьте
+                                    свой отзыв
+                                    <br>в WhatsApp</button>
                             </div>
-                            <div class="reviews__qr">
-                                <img src="./assets/img/qr.png" alt="qr">
-                            </div>
+                            <div class="reviews__qr"><img
+                                    src="./assets/img/qr.webp"
+                                    alt="qr"></div>
                         </div>
                     </div>
                 </div>
@@ -994,137 +1020,118 @@
                 <div class="container">
                     <div class="question__content">
                         <div class="question__intro">
-                            <h1 class="base__title">
-                                Нашлись вопросы?
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Здесь вы можете найти ответы на самые
-                                распространённые из них. Если у вас остались
-                                дополнительные вопросы,
-                                мы всегда готовы помочь — свяжитесь с нами!
-                            </p>
+                            <h2 class="base__title">Нашлись вопросы? <span>.
+                                    .
+                                    .</span></h2>
+                            <p class="base__subtitle">Здесь вы можете найти
+                                ответы на самые распространённые из них.
+                                Если у
+                                вас остались дополнительные вопросы, мы
+                                всегда
+                                готовы помочь — свяжитесь с нами!</p>
                         </div>
                         <div class="question__wrapper">
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
-                                    <img class="arrow"
+                                    <h3>Как быстро вы можете приехать для
+                                        диагностики?</h3><img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
+                                    <h3>Что делать, если проблема повторится
+                                        после ремонта?</h3>
                                     <img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
+                                    <h3>Что входит в бесплатную
+                                        диагностику?</h3>
                                     <img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
+                                    <h3>Как долго длится ремонт?</h3>
                                     <img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
-                                    <img class="arrow"
+                                    <h3>Можете ли вы ремонтировать устройства на
+                                        дому или мне нужно её куда-то
+                                        отвозить?</h3><img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
-                                    <img class="arrow"
+                                    <h3>Принимаете ли вы к оплате
+                                        карты?</h3><img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                             <div class="question__accordeon">
                                 <div class="question__acc-head">
-                                    <h1>Как быстро вы можете приехать для
-                                        диагностики?</h1>
-                                    <img class="arrow"
+                                    <h3>Что делать, если я не дома во время
+                                        запланированного визита
+                                        мастера?</h3><img class="arrow"
                                         src="./assets/img/ico/accordeon-ico.svg"
-                                        alt="ico">
-                                </div>
+                                        alt="ico"></div>
                                 <div class="question__acc-body">
-                                    <p>
-                                        Наш специалист может быть у вас дома уже
+                                    <p>Наш специалист может быть у вас дома
+                                        уже
                                         в течение 2 часов после оформления
-                                        заявки.
-                                    </p>
+                                        заявки.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="question__footer">
                             <div class="question__footer-item">
                                 <p>Не нашли ответ на свой вопрос?</p>
-                                <button class="btn__red">свяжитесь с
+                                <button
+                                    class="btn__red get__popup">свяжитесь с
                                     нами!</button>
                             </div>
                         </div>
@@ -1135,69 +1142,52 @@
                 <div class="container">
                     <div class="garanty__content">
                         <div class="garanty__intro">
-                            <h1 class="base__title">
-                                Гарантия на непредвиденные ситуации 365 дней
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Мы рядом, если ваше устройство даст сбой или
-                                возникнут вопросы по установленным запчастям
-                                — всё это под нашей защитой
-                                на протяжении года после ремонта. Исключения
-                                минимальны, поддержка максимальна
-                            </p>
+                            <h2 class="base__title">Гарантия на
+                                непредвиденные
+                                ситуации 365 дней <span>. . .</span></h2>
+                            <p class="base__subtitle">Мы рядом, если ваше
+                                устройство даст сбой или возникнут вопросы
+                                по
+                                установленным запчастям — всё это под нашей
+                                защитой на протяжении года после ремонта.
+                                Исключения минимальны, поддержка
+                                максимальна</p>
                         </div>
                         <div class="garanty__card-first-floor">
                             <div class="garanty__card-item">
-                                <div class="garanty__card-item-img">
-                                    <img
+                                <div class="garanty__card-item-img"><img
                                         src="./assets/img/ico/a_garanty/1_dedline.svg"
-                                        alt="Срок">
-                                </div>
+                                        alt="Срок"></div>
                                 <div class="garanty__card-item-intro">
-                                    <h1>Срок:
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        1 год с момента выполнения ремонта.
-                                    </p>
+                                    <h3>Срок:</h3>
+                                    <p>. . .
+                                        <br>1 год с момента выполнения
+                                        ремонта.</p>
                                 </div>
                             </div>
                             <div class="garanty__card-item">
-                                <div class="garanty__card-item-img">
-                                    <img
+                                <div class="garanty__card-item-img"><img
                                         src="./assets/img/ico/a_garanty/2_safe.svg"
-                                        alt="Покрытие">
-                                </div>
+                                        alt="Покрытие"></div>
                                 <div class="garanty__card-item-intro">
-                                    <h1>Покрытие:
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Все выполненные работы и
-                                        установленные запчасти.
-                                    </p>
+                                    <h3>Покрытие:</h3>
+                                    <p>. . .
+                                        <br>Все выполненные работы и
+                                        установленные запчасти.</p>
                                 </div>
                             </div>
                             <div class="garanty__card-item">
-                                <div class="garanty__card-item-img">
-                                    <img
+                                <div class="garanty__card-item-img"><img
                                         src="./assets/img/ico/a_garanty/3_exclam.svg"
-                                        alt>
-                                </div>
+                                        alt></div>
                                 <div class="garanty__card-item-intro">
-                                    <h1>Исключения:
-                                    </h1>
-                                    <p>
-                                        . . .<br>
-                                        Повреждения из-за неправильного
+                                    <h3>Исключения:</h3>
+                                    <p>. . .
+                                        <br>Повреждения из-за неправильного
                                         использования устройства, стихийные
                                         бедствия и потребительские расходные
                                         материалы (например, картриджи,
-                                        батареи).
-                                    </p>
+                                        батареи).</p>
                                 </div>
                             </div>
                         </div>
@@ -1205,55 +1195,42 @@
                             <h2>В случае гарантии:</h2>
                             <div class="garanty__card-first-floor">
                                 <div class="garanty__card-item">
-                                    <div class="garanty__card-item-img">
-                                        <img
+                                    <div class="garanty__card-item-img"><img
                                             src="./assets/img/ico/a_garanty/4_tel.svg"
-                                            alt="Связь">
-                                    </div>
+                                            alt="Связь"></div>
                                     <div class="garanty__card-item-intro">
-                                        <h1>Связь:
-                                        </h1>
-                                        <p>
-                                            . . .<br>
-                                            Звоните по бесплатному номеру
-                                            для России
-                                            <a
-                                                href="tel:+7 (800) 555-55-55">+7(800)
-                                                555-55-55 </a>
-                                            или пишите на сайте
-                                        </p>
+                                        <h3>Связь:</h3>
+                                        <p>. . .
+                                            <br>Звоните по бесплатному
+                                            номеру
+                                            для России <a
+                                                href="tel:+7(800)555-55-55">+7(800)
+                                                555-55-55 </a>или пишите на
+                                            сайте</p>
                                     </div>
                                 </div>
                                 <div class="garanty__card-item">
-                                    <div class="garanty__card-item-img">
-                                        <img
+                                    <div class="garanty__card-item-img"><img
                                             src="./assets/img/ico/a_garanty/5_list.svg"
-                                            alt="Проверка">
-                                    </div>
+                                            alt="Проверка"></div>
                                     <div class="garanty__card-item-intro">
-                                        <h1>Проверка:
-                                        </h1>
-                                        <p>
-                                            . . .<br>
-                                            Описываете проблему, мы
-                                            подтверждаем гарантийный случай.
-                                        </p>
+                                        <h3>Проверка:</h3>
+                                        <p>. . .
+                                            <br>Описываете проблему, мы
+                                            подтверждаем гарантийный
+                                            случай.</p>
                                     </div>
                                 </div>
                                 <div class="garanty__card-item">
-                                    <div class="garanty__card-item-img">
-                                        <img
+                                    <div class="garanty__card-item-img"><img
                                             src="./assets/img/ico/a_garanty/6_remote.svg"
-                                            alt="Решение">
-                                    </div>
+                                            alt="Решение"></div>
                                     <div class="garanty__card-item-intro">
-                                        <h1>Решение:
-                                        </h1>
-                                        <p>
-                                            . . .<br>
-                                            Организуем бесплатный ремонт или
-                                            замену запчастей.
-                                        </p>
+                                        <h3>Решение:</h3>
+                                        <p>. . .
+                                            <br>Организуем бесплатный ремонт
+                                            или
+                                            замену запчастей.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1265,211 +1242,121 @@
                 <div class="container">
                     <div class="master__content">
                         <div class="master__intro">
-                            <h1 class="base__title">
-                                Познакомьтесь с Нашими Мастерами
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Встречайте наших экспертов, благодаря
-                                которым ваша техника работает как часы!
-                                Мы уверены в каждом из них и их уникальных
-                                навыках.
-                            </p>
+                            <h2 class="base__title">Познакомьтесь с Нашими
+                                Мастерами <span>. . .</span></h2>
+                            <p class="base__subtitle">Встречайте наших
+                                экспертов, благодаря которым ваша техника
+                                работает как часы! Мы уверены в каждом из
+                                них и
+                                их уникальных навыках.</p>
                         </div>
                         <div class="master__cards">
                             <div class="master__card-item">
-                                <div class="master__card-img">
-                                    <img src="./assets/img/master/1.png"
-                                        alt="1">
-                                </div>
+                                <div class="master__card-img"><img
+                                        src="./assets/img/master/1.webp"
+                                        alt="1"></div>
                                 <div class="master__card-txt">
-                                    <h1>
-                                        Андрей Васильев<br>
-                                        ...
-                                    </h1>
-                                    <p>
-                                        <span>
-                                            Специализация:
-                                        </span>
-                                        Ремонт и модернизация ПК и
-                                        ноутбуков.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Опыт работы:
-                                        </span>
-                                        Более 12 лет.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            О себе:
-                                        </span>
-                                        С детства увлекаюсь компьютерами.
-                                        Люблю
-                                        сложные задачи, которые требуют
-                                        нестандартного подхода. В свободное
-                                        время изучаю новые технологии и
-                                        участвую
-                                        в IT конференциях.
-                                    </p>
+                                    <h2>Андрей Васильев<br>...</h2>
+                                    <p><span>Специализация: </span>Ремонт и
+                                        модернизация ПК и ноутбуков.</p>
+                                    <p><span>Опыт работы: </span>Более 12
+                                        лет.</p>
+                                    <p><span>О себе: </span>С детства
+                                        увлекаюсь
+                                        компьютерами. Люблю сложные задачи,
+                                        которые требуют нестандартного
+                                        подхода.
+                                        В свободное время изучаю новые
+                                        технологии и участвую в IT
+                                        конференциях.</p>
                                 </div>
                             </div>
                             <div class="master__card-item">
-                                <div class="master__card-img">
-                                    <img src="./assets/img/master/1.png"
-                                        alt="1">
-                                </div>
+                                <div class="master__card-img"><img
+                                        src="./assets/img/master/1.webp"
+                                        alt="1"></div>
                                 <div class="master__card-txt">
-                                    <h1>
-                                        Андрей Васильев<br>
-                                        ...
-                                    </h1>
-                                    <p>
-                                        <span>
-                                            Специализация:
-                                        </span>
-                                        Ремонт и модернизация ПК и
-                                        ноутбуков.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Опыт работы:
-                                        </span>
-                                        Более 12 лет.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            О себе:
-                                        </span>
-                                        С детства увлекаюсь компьютерами.
-                                        Люблю
-                                        сложные задачи, которые требуют
-                                        нестандартного подхода. В свободное
-                                        время изучаю новые технологии и
-                                        участвую
-                                        в IT конференциях.
-                                    </p>
+                                    <h2>Андрей Васильев<br>...</h2>
+                                    <p><span>Специализация: </span>Ремонт и
+                                        модернизация ПК и ноутбуков.</p>
+                                    <p><span>Опыт работы: </span>Более 12
+                                        лет.</p>
+                                    <p><span>О себе: </span>С детства
+                                        увлекаюсь
+                                        компьютерами. Люблю сложные задачи,
+                                        которые требуют нестандартного
+                                        подхода.
+                                        В свободное время изучаю новые
+                                        технологии и участвую в IT
+                                        конференциях.</p>
                                 </div>
                             </div>
                             <div class="master__card-item">
-                                <div class="master__card-img">
-                                    <img src="./assets/img/master/1.png"
-                                        alt="1">
-                                </div>
+                                <div class="master__card-img"><img
+                                        src="./assets/img/master/1.webp"
+                                        alt="1"></div>
                                 <div class="master__card-txt">
-                                    <h1>
-                                        Андрей Васильев<br>
-                                        ...
-                                    </h1>
-                                    <p>
-                                        <span>
-                                            Специализация:
-                                        </span>
-                                        Ремонт и модернизация ПК и
-                                        ноутбуков.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Опыт работы:
-                                        </span>
-                                        Более 12 лет.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            О себе:
-                                        </span>
-                                        С детства увлекаюсь компьютерами.
-                                        Люблю
-                                        сложные задачи, которые требуют
-                                        нестандартного подхода. В свободное
-                                        время изучаю новые технологии и
-                                        участвую
-                                        в IT конференциях.
-                                    </p>
+                                    <h2>Андрей Васильев<br>...</h2>
+                                    <p><span>Специализация: </span>Ремонт и
+                                        модернизация ПК и ноутбуков.</p>
+                                    <p><span>Опыт работы: </span>Более 12
+                                        лет.</p>
+                                    <p><span>О себе: </span>С детства
+                                        увлекаюсь
+                                        компьютерами. Люблю сложные задачи,
+                                        которые требуют нестандартного
+                                        подхода.
+                                        В свободное время изучаю новые
+                                        технологии и участвую в IT
+                                        конференциях.</p>
                                 </div>
                             </div>
                             <div class="master__card-item">
-                                <div class="master__card-img">
-                                    <img src="./assets/img/master/1.png"
-                                        alt="1">
-                                </div>
+                                <div class="master__card-img"><img
+                                        src="./assets/img/master/1.webp"
+                                        alt="1"></div>
                                 <div class="master__card-txt">
-                                    <h1>
-                                        Андрей Васильев<br>
-                                        ...
-                                    </h1>
-                                    <p>
-                                        <span>
-                                            Специализация:
-                                        </span>
-                                        Ремонт и модернизация ПК и
-                                        ноутбуков.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Опыт работы:
-                                        </span>
-                                        Более 12 лет.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            О себе:
-                                        </span>
-                                        С детства увлекаюсь компьютерами.
-                                        Люблю
-                                        сложные задачи, которые требуют
-                                        нестандартного подхода. В свободное
-                                        время изучаю новые технологии и
-                                        участвую
-                                        в IT конференциях.
-                                    </p>
+                                    <h2>Андрей Васильев<br>...</h2>
+                                    <p><span>Специализация: </span>Ремонт и
+                                        модернизация ПК и ноутбуков.</p>
+                                    <p><span>Опыт работы: </span>Более 12
+                                        лет.</p>
+                                    <p><span>О себе: </span>С детства
+                                        увлекаюсь
+                                        компьютерами. Люблю сложные задачи,
+                                        которые требуют нестандартного
+                                        подхода.
+                                        В свободное время изучаю новые
+                                        технологии и участвую в IT
+                                        конференциях.</p>
                                 </div>
                             </div>
                             <div class="master__card-item">
-                                <div class="master__card-img">
-                                    <img src="./assets/img/master/2.png"
-                                        alt="1">
-                                </div>
+                                <div class="master__card-img"><img
+                                        src="./assets/img/master/2.webp"
+                                        alt="1"></div>
                                 <div class="master__card-txt">
-                                    <h1>
-                                        Денис Королёв<br>
-                                        ...
-                                    </h1>
-                                    <p>
-                                        <span>
-                                            Специализация:
-                                        </span>
-                                        Ремонт и настройка игровых консолей.
-                                    </p>
-                                    <p>
-                                        <span>
-                                            Опыт работы:
-                                        </span>
-                                        8 лет..
-                                    </p>
-                                    <p>
-                                        <span>
-                                            О себе:
-                                        </span>
-                                        Игры — это не просто хобби, это
-                                        часть жизни многих. Моя задача —
-                                        помочь вашей консоли работать
-                                        идеально.
-                                    </p>
+                                    <h2>Денис Королёв<br>...</h2>
+                                    <p><span>Специализация: </span>Ремонт и
+                                        настройка игровых консолей.</p>
+                                    <p><span>Опыт работы: </span>8 лет..</p>
+                                    <p><span>О себе: </span>Игры — это не
+                                        просто
+                                        хобби, это часть жизни многих. Моя
+                                        задача — помочь вашей консоли
+                                        работать
+                                        идеально.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="master__subtitle">
-                            <p>
-                                Наши мастера постоянно обновляют свои знания
-                                и следят за последними трендами в мире
-                                техники.
-                                Мы гарантируем высокое качество и
-                                профессионализм.
-                            </p>
-                            <button class="btn__red">вызвать
+                            <p>Наши мастера постоянно обновляют свои знания
+                                и
+                                следят за последними трендами в мире
+                                техники. Мы
+                                гарантируем высокое качество и
+                                профессионализм.</p>
+                            <button class="btn__red get__popup">вызвать
                                 мастера</button>
                         </div>
                     </div>
@@ -1479,46 +1366,43 @@
                 <div class="container">
                     <div class="find__content">
                         <div class="find__intro">
-                            <h1 class="base__title">
-                                Найдите
-                                Ближайшего Мастера
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Мы развернули широкую сеть мастеров по всей
-                                Москве и Московской области, чтобы
-                                гарантировать
-                                вам быстрый и эффективный сервис ремонта
-                                прямо у вас дома.
-                            </p>
+                            <h2 class="base__title">Найдите Ближайшего
+                                Мастера
+                                <span>. . .</span></h2>
+                            <p class="base__subtitle">Мы развернули широкую
+                                сеть
+                                мастеров по всей Москве и Московской
+                                области,
+                                чтобы гарантировать вам быстрый и
+                                эффективный
+                                сервис ремонта прямо у вас дома.</p>
                         </div>
                         <div class="find__map">
                             <div class="find__map-title">
                                 <h3>Укажите свой адрес, и мы покажем, когда
-                                    и как скоро
-                                    к вам может прибыть ближайший
-                                    специалист.</h3>
-                            </div>
+                                    и
+                                    как скоро к вам может прибыть ближайший
+                                    специалист.</h3></div>
                             <div class="find__map-wrapper">
                                 <div class="find__map-head">
                                     <form action="#">
-                                        <input type="text"
-                                            placeholder="Укажите ваш адрес">
-                                        <button class="btn__red"
+                                        <input
+                                            placeholder="Укажите ваш адрес"
+                                            required>
+                                        <input type="tel"
+                                            class="find__map-tel-input telephone__id"
+                                            placeholder="Введите ваш номер"
+                                            required>
+                                        <button
+                                            class="btn__red find__map-tel-btn get__popup disabled"
                                             type="submit">Найти
                                             мастера</button>
                                     </form>
                                 </div>
                                 <div class="find__map-body">
-                                    <div
-                                        style="position:relative;overflow:hidden;"><iframe
-                                            src="https://yandex.uz/map-widget/v1/?ll=38.430269%2C55.707910&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA0NBIx0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCIKDcF_G0IV4R9eQg%2C%2C&z=8.14"
-                                            width="100%" height="400"
-                                            frameborder="1"
-                                            allowfullscreen="true"
-                                            style="position:relative;"></iframe></div>
+                                    <div id="map-container">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309199.6814191584!2d35.035144773024605!3d55.58325344524487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab231b0c3c5d9%3A0x910cb3c03bdef242!2sMoscow%20Oblast%2C%20Russia!5e0!3m2!1sen!2s!4v1713459530794!5m2!1sen!2s" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1531,40 +1415,35 @@
                 <div class="container">
                     <div class="footer__content">
                         <div class="footer__intro">
-                            <h1 class="base__title">
-                                Мы Всегда
-                                Рядом!
-                                <span>
-                                    . . .
-                                </span>
-                            </h1>
-                            <p class="base__subtitle">
-                                Наша команда готова ответить на любые
-                                вопросы и помочь с ремонтом вашей
-                                компьютерной техники.<br>
-                                <span>Мы всегда здесь, чтобы облегчить вам
-                                    жизнь!</span>
-                            </p>
+                            <h1 class="base__title">Мы Всегда Рядом! <span>.
+                                    .
+                                    .</span></h1>
+                            <p class="base__subtitle">Наша команда готова
+                                ответить на любые вопросы и помочь с
+                                ремонтом
+                                вашей компьютерной техники.
+                                <br><span>Мы всегда здесь, чтобы облегчить
+                                    вам
+                                    жизнь!</span></p>
                         </div>
                         <div class="footer__wrapper">
                             <div class="footer__wrapper-tel">
-                                <div class="footer__wrapper-tel-ico">
-                                    <img
+                                <div class="footer__wrapper-tel-ico"><img
                                         src="./assets/img/ico/tel-black-footer.svg"
-                                        alt="tel">
-                                </div>
+                                        alt="tel"></div>
                                 <div class="footer__wrapper-title">
-                                    <h1>Телефон</h1>
-                                </div>
-                                <div class="footer__wrapper-link">
-                                    <a href="tel:+7 925 555 35 35">+7 925
-                                        555 35 35</a>
-                                </div>
+                                    <h1>Телефон</h1></div>
+                                <div class="footer__wrapper-link"><a
+                                        href="tel:+79255553535">+7 925 555
+                                        35
+                                        35</a></div>
                                 <div class="footer__wrapper-social">
-                                    <a class="footer__whatsapp"
-                                        href="#">WhatsApp</a>
-                                    <a class="footer__telegram"
-                                        href="#">Telegram</a>
+                                    <a target="_blank"
+                                        class="footer__whatsapp"
+                                        href="https://wa.me/+79998774554">WhatsApp</a>
+                                    <a target="_blank"
+                                        class="footer__telegram"
+                                        href="https://t.me/@websensei1">Telegram</a>
                                     <p
                                         class="footer__wrapper-social-sub">Часы
                                         Работы:
@@ -1573,17 +1452,16 @@
                             </div>
                             <div class="footer__form">
                                 <div class="footer__form-title">
-                                    <h1>Форма Заказа:</h1>
-                                </div>
+                                    <h1>Форма Заказа:</h1></div>
                                 <div class="footer__form-wrapper">
                                     <form action="./assets/php/telegram.php"
                                         method="POST">
                                         <input name="user__phone" type="tel"
                                             placeholder="Введите ваш номер"
                                             class="telephone__id">
-                                        <input name="user__address" type="text"
+                                        <input name="user__address"
                                             placeholder="Введите Ваш адрес">
-                                        <input name="user__problem" type="text"
+                                        <input name="user__problem"
                                             placeholder="Опишите вашу проблему">
                                         <button class="btn__red"
                                             type="submit">Вызвать
@@ -1591,20 +1469,15 @@
                                     </form>
                                 </div>
                                 <div class="footer__political">
-                                    <form action="#">
+                                    <form action="#" id="political">
                                         <input type="checkbox"
-                                            name="Политика конфедециалности"
-                                            id="politca">
-                                        <label
-                                            for="Политика конфедециалности">Я
-                                            даю согласие на обработку моих
-                                            персональных данных в
-                                            соответствии с
-                                            <a href="#">
-                                                Политикой
-                                                конфиденциальности
-                                            </a>
-                                        </label>
+                                            name="political"
+                                            id="politca" checked>
+                                        <label for="politca">Я даю согласие на
+                                            обработку моих персональных данных в
+                                            соответствии с <a target="_blank"
+                                                href="https://sistemnik.online/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf">Политикой
+                                                конфиденциальности</a></label>
                                     </form>
                                 </div>
                             </div>
@@ -1617,13 +1490,46 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-        <script src="./assets/js/slick/slick.js"></script>
-        <script src="./assets/js/slick/slick.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
         <script src="./assets/js/script.js"></script>
         <script>
-            $(document).ready(function () {
-                $('.telephone__id').mask('+7 (999) 999-99-99');
+            $(document).ready(function() {
+                $(".telephone__id").mask("+9 (999) 999-99-99")
             });
         </script>
+        <script>
+            function loadYandexMapScript() {
+                var script = document.createElement('script');
+                script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
+                script.async = true;
+                script.onload = initializeYandexMap; 
+                document.body.appendChild(script);
+            }
+            
+            function initializeYandexMap() {
+                var map = new ymaps.Map('map-container', {
+                    center: [55.753215, 37.622504],
+                    zoom: 10
+                });
+            
+            }
+            
+            function lazyLoadMap() {
+                var mapContainer = document.getElementById('map-container');
+                var mapContainerPosition = mapContainer.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            
+                if (mapContainerPosition - windowHeight < 0) {
+                    loadYandexMapScript();
+                    window.removeEventListener('scroll', lazyLoadMap);
+                }
+            }
+            
+            window.addEventListener('scroll', lazyLoadMap);
+            
+            lazyLoadMap();
+            </script>
     </body>
+
 </html>
