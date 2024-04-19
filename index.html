@@ -71,6 +71,114 @@
                 </div>
             </div>
         </div>
+        <div class="modalbox__diagnostics">
+            <div class="container">
+                <div class="modalbox__content">
+                    <div class="modalbox__close">
+                        <button
+                            class="get__free-diagnostic modalbox__close-item"><img
+                                src="./assets/img/ico/close.svg"
+                                alt="close"></button>
+                    </div>
+                    <div class="modalbox__intro">
+                        <h1>Введите Ваш номер</h1>
+                        <h2>Для заказа бесплатной диагностики</h2>
+                        <form action="./assets/php/telegram.php" method="POST">
+                            <input placeholder="+7 XXX XXX XX XX"
+                                class="telephone__id modalbox__input"
+                                name="user__phone" required>
+                            <button
+                                class="modal__send btn__red">Отправить</button>
+                            <div class="modalbox__subtitle">
+                                <input type="checkbox" name="modalbox__subtitle"
+                                    id="modalbox__subtitle" checked>
+                                <p>Я даю согласие на обработку моих персональных
+                                    данных в соответствии с <a target="_blank"
+                                        href="https://sistemnik.online/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf">Политикой
+                                        конфиденциальности</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modalbox__master">
+            <div class="container">
+                <div class="modalbox__content">
+                    <div class="modalbox__close">
+                        <button class="get__master modalbox__close-item"><img
+                                src="./assets/img/ico/close.svg"
+                                alt="close"></button>
+                    </div>
+                    <div class="modalbox__intro">
+                        <h1>Введите Ваш номер</h1>
+                        <h2>Для вызова мастера</h2>
+                        <form action="./assets/php/telegram.php" method="POST">
+                            <input placeholder="+7 XXX XXX XX XX"
+                                class="telephone__id modalbox__input"
+                                name="user__phone" required>
+                            <button
+                                class="modal__send btn__red">Отправить</button>
+                            <div class="modalbox__subtitle">
+                                <input type="checkbox" name="modalbox__subtitle"
+                                    id="modalbox__subtitle" checked>
+                                <p>Я даю согласие на обработку моих персональных
+                                    данных в соответствии с <a target="_blank"
+                                        href="https://sistemnik.online/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf">Политикой
+                                        конфиденциальности</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modalbox__review">
+            <div class="container">
+                <div class="modalbox__content">
+                    <div class="modalbox__close">
+                        <button class="get__review modalbox__close-item"><img
+                                src="./assets/img/ico/close.svg"
+                                alt="close"></button>
+                    </div>
+                    <div class="modalbox__intro">
+                        <img class="modalbox__qr-item"
+                            src="./assets/img/qrcode.webp" alt="qr">
+                        <h2>Для того чтобы оставить свой отзыв, отсканируйте QR код</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modalbox__price">
+            <div class="container">
+                <div class="modalbox__content">
+                    <div class="modalbox__close">
+                        <button
+                            class="get__price-popup modalbox__close-item"><img
+                                src="./assets/img/ico/close.svg"
+                                alt="close"></button>
+                    </div>
+                    <div class="modalbox__intro">
+                        <h1 class="service__title">Введите Ваш номер</h1>
+                        <h2>Для заказа бесплатной диагностики</h2>
+                        <form action="./assets/php/telegram.php" method="POST">
+                            <input placeholder="+7 XXX XXX XX XX"
+                                class="telephone__id modalbox__input"
+                                name="user__phone" required>
+                            <button
+                                class="modal__send btn__red">Отправить</button>
+                            <div class="modalbox__subtitle">
+                                <input type="checkbox" name="modalbox__subtitle"
+                                    id="modalbox__subtitle" checked>
+                                <p>Я даю согласие на обработку моих персональных
+                                    данных в соответствии с <a target="_blank"
+                                        href="https://sistemnik.online/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf">Политикой
+                                        конфиденциальности</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header>
             <div class="navbar">
                 <div class="container">
@@ -89,15 +197,14 @@
                             <div class="navbar__social-tel">
                                 <div class="navbar__social-tel-ico"><img
                                         src="./assets/img/ico/tel_small.svg"
-                                        alt="tel"></div><a
+                                        alt="tel"></div><a 
                                     href="tel:+79255553535">+7 925 555 35 35
-                                    <span
-                                        class="open__tel">смотреть</span></a></div>
+                                    </a></div>
                             <div class="navbar__social-icons">
-                                <a href="https://t.me/websensei1"><img
+                                <a target="_blank" href="https://t.me/websensei1"><img
                                         src="./assets/img/ico/telegram.svg"
                                         alt="telegram"></a>
-                                <a href="https://kwork.ru/seller"><img
+                                <a target="_blank" href="https://kwork.ru/seller"><img
                                         src="./assets/img/ico/whatsapp.svg"
                                         alt="whatsapp"></a>
                             </div>
@@ -119,9 +226,9 @@
                                 href="tel:+79255553535">+7 925 555 35 35
                                 <span>смотреть</span></a></div>
                         <div class="navbar__social-icons">
-                            <a href="#"><img src="./assets/img/ico/telegram.svg"
+                            <a target="_blank" href="#"><img src="./assets/img/ico/telegram.svg"
                                     alt="telegram"></a>
-                            <a href="#"><img src="./assets/img/ico/whatsapp.svg"
+                            <a target="_blank" href="#"><img src="./assets/img/ico/whatsapp.svg"
                                     alt="whatsapp"></a>
                         </div>
                     </div>
@@ -133,6 +240,16 @@
                 <div class="container">
                     <div class="info__content">
                         <div class="info__intro-wrapper">
+                            <div class="info__flagship">
+                                <div class="info__flagship-item">
+                                    <img src="./assets/img/ico/flag_1.svg"
+                                        alt="flag_1">
+                                </div>
+                                <div class="info__flagship-item">
+                                    <img src="./assets/img/ico/flag_2.svg"
+                                        alt="flag_2">
+                                </div>
+                            </div>
                             <div class="info__intro">
                                 <h2>Экспертный ремонт компьютерной техники у вас
                                     дома в течение 24 часов</h2>
@@ -140,6 +257,14 @@
                             <div class="info__img-mob">
                                 <img src="./assets/img/nout.webp" alt="nout"
                                     loading="lazy">
+                                <div class="info__img-flagship">
+                                    <div class="info__mob-img-flagship-item">
+                                        <img src="./assets/img/ico/flag_1-mob.svg" alt="1">
+                                    </div>
+                                    <div class="info__mob-img-flagship-item">
+                                        <img src="./assets/img/ico/flag_2-mob.svg" alt="2">
+                                    </div>
+                                </div>
                             </div>
                             <div class="info__cards">
                                 <div class="info__card-wrapper">
@@ -187,7 +312,7 @@
                                 </div>
                             </div>
                             <div class="info__link">
-                                <button class="get__popup btn__red">Вызвать
+                                <button class="get__master btn__red">Вызвать
                                     мастера</button>
                             </div>
                         </div>
@@ -314,7 +439,8 @@
                                 class="choise__card-black choise__card-item"><img
                                     src="./assets/img/diagnostic.webp"
                                     alt="diagnostic">
-                                <button class="btn__red get__popup">Заказать
+                                <button
+                                    class="get__free-diagnostic btn__red">Заказать
                                     бесплатную диагностику</button>
                             </div>
                         </div>
@@ -336,7 +462,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/1_tel.png" alt="tel">    
+                                        <h3>01</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -349,9 +475,7 @@
                                         течение 5 минут, чтобы уточнить
                                         детали и
                                         запланировать визит мастера. -
-                                        Иконка
-                                        веб-формы или телефонного
-                                        звонка.</p>
+                                    </p>
                                 </div>
                             </div>
                             <div class="save__card-item">
@@ -361,7 +485,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/2_sms.png" alt="2">    
+                                        <h3>02</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -372,8 +496,7 @@
                                         электронное письмо с информацией о
                                         мастере, включая его имя, а также
                                         предполагаемое время прибытия. -
-                                        Иконка
-                                        SMS или электронного письма.</p>
+                                    </p>
                                 </div>
                             </div>
                             <div class="save__card-item">
@@ -383,7 +506,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/3_tool.png" alt="3">    
+                                        <h3>03</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -394,8 +517,7 @@
                                         объяснит причину неисправности и
                                         предложит оптимальные варианты
                                         ремонта с
-                                        точной оценкой стоимости. - Иконка
-                                        инструментов или диагностики.</p>
+                                        точной оценкой стоимости</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
@@ -405,7 +527,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/4_contract.png" alt="4">
+                                        <h3>04</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -414,7 +536,7 @@
                                         <br>Вы решаете, какие работы будут
                                         выполнены. Мы не начинаем ремонт без
                                         вашего полного согласия на условия и
-                                        стоимость. - Иконка договора.</p>
+                                        стоимость.</p>
                                 </div>
                             </div>
                             <div class="save__card-item">
@@ -424,7 +546,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/5_time.png" alt="5">
+                                        <h3>05</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -435,7 +557,6 @@
                                         современные
                                         инструменты для ремонта. Вся работа
                                         занимает обычно не более нескольких
-                                        часов. - Иконка гаечного ключа или
                                         часов.</p>
                                 </div>
                             </div>
@@ -446,7 +567,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/6_test.png" alt="6">    
+                                        <h3>06</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -456,9 +577,8 @@
                                         полное
                                         тестирование, чтобы убедиться, что
                                         все
-                                        работает идеально. - Иконка проверки
-                                        или
-                                        теста.</p>
+                                        работает идеально.
+                                    </p>
                                 </div>
                             </div>
                             <div class="save__card-item">
@@ -468,7 +588,7 @@
                                             src="./assets/img/ico/next.svg"
                                             alt="next"></div>
                                     <div class="save__card-number">
-                                        <img src="./assets/img/ico/a_savecard/7_garanty.png" alt="7">    
+                                        <h3>07</h3>
                                     </div>
                                 </div>
                                 <div class="save__card-body">
@@ -481,15 +601,15 @@
                                         вопросы или дополнительные
                                         потребности,
                                         наша служба поддержки всегда к вашим
-                                        услугам. - Иконка гарантии или
-                                        поддержки.</p>
+                                        услугам.
+                                    </p>
                                 </div>
                             </div>
                             <div
                                 class="save__card-black save__card-item"><img
                                     src="./assets/img/technique.webp"
                                     alt="technique">
-                                <button class="btn__red get__popup">Вызвать
+                                <button class="get__master btn__red">Вызвать
                                     мастера</button>
                             </div>
                         </div>
@@ -525,7 +645,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/power_1.svg"
                                                     alt="Не включается"></td>
@@ -535,7 +655,7 @@
                                                 платы и т.д</td>
                                             <td>2000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/virus_2.svg"
                                                     alt="Вирусы"></td>
@@ -546,7 +666,7 @@
                                             <td
                                                 class="table__right-td">1000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/slowwork_3.svg"
                                                     alt="Медленная работа"></td>
@@ -556,7 +676,7 @@
                                                 памяти и т.д.</td>
                                             <td>1500₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/display_4.svg"
                                                     alt="Проблемы с дисплеем"></td>
@@ -566,7 +686,7 @@
                                             <td
                                                 class="table__right-td">2500₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/memory_5.svg"
                                                     alt="Повреждение данных"></td>
@@ -576,7 +696,7 @@
                                                 жесткого диска</td>
                                             <td>3000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/keyboard_6.svg"
                                                     alt="Не работает клавиатура"></td>
@@ -587,7 +707,7 @@
                                             <td
                                                 class="table__right-td">1000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/audio_7.svg"
                                                     alt="Проблемы со звуком"></td>
@@ -597,7 +717,7 @@
                                                 карты</td>
                                             <td>2000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td class="table__td"><img
                                                     src="./assets/img/ico/pricelist/wifi_8.svg"
                                                     alt="Проблемы с Wi-Fi"></td>
@@ -608,7 +728,7 @@
                                             <td
                                                 class="table__right-td">2000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td><img
                                                     src="./assets/img/ico/pricelist/temp_9.svg"
                                                     alt="Перегревается"></td>
@@ -618,7 +738,7 @@
                                                 охлаждения</td>
                                             <td>2000₽</td>
                                         </tr>
-                                        <tr class="get__popup">
+                                        <tr class="get__price-popup">
                                             <td class="table_last-td"><img
                                                     src="./assets/img/ico/pricelist/usb_10.svg"
                                                     alt="Не читает USB-устройства"></td>
@@ -647,7 +767,7 @@
                                     платежей.</p>
                             </div>
                             <div class="price__exclam-btn">
-                                <button class="btn__red get__popup">Вызвать
+                                <button class="get__master btn__red">Вызвать
                                     мастера</button>
                             </div>
                         </div>
@@ -807,7 +927,12 @@
                         <div class="zone__maps">
                             <div class="zone__item">
                                 <div class="map-container">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309199.6814191584!2d35.035144773024605!3d55.58325344524487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab231b0c3c5d9%3A0x910cb3c03bdef242!2sMoscow%20Oblast%2C%20Russia!5e0!3m2!1sen!2s!4v1713459530794!5m2!1sen!2s" width="800" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309199.6814191584!2d35.035144773024605!3d55.58325344524487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab231b0c3c5d9%3A0x910cb3c03bdef242!2sMoscow%20Oblast%2C%20Russia!5e0!3m2!1sen!2s!4v1713459530794!5m2!1sen!2s"
+                                        width="800" height="1000"
+                                        style="border:0;" allowfullscreen
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                             <div class="zone__links">
@@ -868,7 +993,7 @@
                                                     name="user__problem"
                                                     class="zone__request-input-item">
                                                 <button
-                                                    class="btn__red get__popup"
+                                                    class="btn__red"
                                                     type="submit">Вызвать
                                                     мастера</button>
                                             </form>
@@ -930,7 +1055,7 @@
                         </div>
                         <div class="reviews__links">
                             <div class="reviews__link-item">
-                                <button class="btn__red get__popup">Оставьте
+                                <button class="get__review btn__red">Оставьте
                                     свой отзыв
                                     <br>в WhatsApp</button>
                             </div>
@@ -1005,7 +1130,7 @@
                         </div>
                         <div class="reviews__links">
                             <div class="reviews__link-item">
-                                <button class="btn__red get__popup">Оставьте
+                                <button class="get__review btn__red">Оставьте
                                     свой отзыв
                                     <br>в WhatsApp</button>
                             </div>
@@ -1356,7 +1481,7 @@
                                 техники. Мы
                                 гарантируем высокое качество и
                                 профессионализм.</p>
-                            <button class="btn__red get__popup">вызвать
+                            <button class="get__master btn__red">вызвать
                                 мастера</button>
                         </div>
                     </div>
@@ -1401,7 +1526,12 @@
                                 </div>
                                 <div class="find__map-body">
                                     <div id="map-container">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309199.6814191584!2d35.035144773024605!3d55.58325344524487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab231b0c3c5d9%3A0x910cb3c03bdef242!2sMoscow%20Oblast%2C%20Russia!5e0!3m2!1sen!2s!4v1713459530794!5m2!1sen!2s" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309199.6814191584!2d35.035144773024605!3d55.58325344524487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab231b0c3c5d9%3A0x910cb3c03bdef242!2sMoscow%20Oblast%2C%20Russia!5e0!3m2!1sen!2s!4v1713459530794!5m2!1sen!2s"
+                                            width="800" height="800"
+                                            style="border:0;" allowfullscreen
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                             </div>

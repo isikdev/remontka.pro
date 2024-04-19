@@ -84,6 +84,85 @@ button {
     margin: 0 auto;
 }
 ///modalbox
+.modalbox__price {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    overflow: hidden;
+    right: -120%;
+    top: 0;
+    transition: all 0.3s ease;
+    &-active {
+        transition: all 0.3s ease;
+        right: 0;
+    }
+}
+.modalbox__qr {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    overflow: hidden;
+    right: -120%;
+    top: 0;
+    transition: all 0.3s ease;
+    &-active {
+        transition: all 0.3s ease;
+        right: 0;
+    }
+    &-item {
+        max-height: 300px;
+        margin: 0 auto;
+    }
+}
+.modalbox__review {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    overflow: hidden;
+    right: -120%;
+    top: 0;
+    transition: all 0.3s ease;
+    &-active {
+        transition: all 0.3s ease;
+        right: 0;
+    }
+}
+.modalbox__diagnostics {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    overflow: hidden;
+    right: -120%;
+    top: 0;
+    transition: all 0.3s ease;
+    &-active {
+        transition: all 0.3s ease;
+        right: 0;
+    }
+}
+.modalbox__master {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    overflow: hidden;
+    right: -120%;
+    top: 0;
+    transition: all 0.3s ease;
+    &-active {
+        transition: all 0.3s ease;
+        right: 0;
+    }
+}
 .modalbox {
     background-color: #f5f5f5;
     width: 100vw;
@@ -124,6 +203,16 @@ button {
             font-size: 36px;
             font-weight: 700;
             line-height: 34px;
+            color: $red;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 20px auto;
+        }
+        h2 {
+            font-family: "Bebas Neue Pro", sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 32px;
             color: $red;
             text-align: center;
             text-transform: uppercase;
@@ -324,6 +413,17 @@ button {
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 50px 0 100px 0;
+    position: relative;
+    &__flagship {
+        position: absolute;
+        z-index: 9000;
+        top: 0;
+        right: 10%;
+        display: flex;
+    }
+    &__flagship-item {
+        margin: 0 12px;
+    }
     &__intro {
         h2 {
             color: $black1;
@@ -430,17 +530,19 @@ button {
         margin-bottom: auto;
         margin-top: 50px;
         font-family: "Bebas Neue Pro", sans-serif;
-        text-transform: uppercase;
-        h1 {
+        h2 {
             font-size: 27px;
             line-height: 30px;
+            text-transform: uppercase;
         }
         p {
+            font-family: "Bebas Neue Pro", sans-serif;
             font-size: 18px;
             font-weight: 400;
             line-height: 21px;
             a {
                 text-decoration: underline;
+                text-transform: capitalize;
             }
             .whatsapp__link {
                 color: $green2;
@@ -472,11 +574,11 @@ button {
         max-width: 260px;
         margin: 0 auto;
         font-family: "Bebas Neue Pro", sans-serif;
-        text-transform: uppercase;
     }
     &__card-head {
         display: flex;
         justify-content: space-between;
+        text-transform: uppercase;
     }
     &__card-next {
         display: flex;
@@ -853,8 +955,8 @@ button {
     padding: 150px 0;
     &__slick {
         position: relative;
-        max-width: 320px;
-        margin: 50px auto;
+        padding: 50px 0;
+        width: 100%;
         button {
             background: transparent;
             border: 0px none;
@@ -1037,7 +1139,7 @@ button {
     }
     &__card-txt {
         margin: 12px 0;
-        h2 {    
+        h2 {
             font-family: "Bebas Neue Pro", sans-serif;
             font-size: 27px;
             font-weight: 700;
@@ -1324,6 +1426,22 @@ button {
     }
     .info {
         padding: 100px 0;
+    }
+    .info__flagship {
+        display: none;
+    }
+    .info__img-mob {
+        position: relative;
+    }
+    .info__img-flagship {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .info__mob-img-flagship-item {
+        img {
+            width: 100px;
+        }
     }
     .choise {
         padding: 100px 0;

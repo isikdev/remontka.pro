@@ -1,40 +1,42 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Ремонт компьютерной техники Москва и МО">
-        <meta name="keywords" content="Ремонт компьютеров
-        Компьютерный сервис
-        Техническая поддержка ПК
-        Восстановление данных
-        Обслуживание компьютеров
-        Устранение неисправностей ПК
-        Замена комплектующих
-        Диагностика ПК
-        Ремонт ноутбуков
-        Сервисный центр в Москве
-        Мастер по ремонту ПК
-        Компьютерная помощь
-        Ремонт ПК на дому
-        Восстановление работоспособности ПК
-        Профессиональный ремонт компьютерной техники">
-        <meta name="author"
-            content="Ремонт компьютерной техники sistemnik.online">
-        <title>Ремонт компьютерной техники Москва и МО</title>
-        <link rel="stylesheet" href="./assets/js/slick/slick-theme.css">
-        <link rel="stylesheet" href="./assets/js/slick/slick.css">
-        <link rel="stylesheet" href="./assets/scss/main.css">
-        <link rel="apple-touch-icon" sizes="180x180"
-            href="./assets/img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32"
-            href="./assets/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16"
-            href="./assets/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Ремонт компьютерной техники Москва и МО">
+    <meta name="keywords" content="Ремонт компьютеров
+            Компьютерный сервис
+            Техническая поддержка ПК
+            Восстановление данных
+            Обслуживание компьютеров
+            Устранение неисправностей ПК
+            Замена комплектующих
+            Диагностика ПК
+            Ремонт ноутбуков
+            Сервисный центр в Москве
+            Мастер по ремонту ПК
+            Компьютерная помощь
+            Ремонт ПК на дому
+            Восстановление работоспособности ПК
+            Профессиональный ремонт компьютерной техники">
+    <meta name="author"
+        content="Ремонт компьютерной техники sistemnik.online">
+    <title>Ремонт компьютерной техники Москва и МО</title>
+    <link href="./assets/scss/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+    <link rel="apple-touch-icon"
+        href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="preload" href="./assets/img/info.webp" as="image">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+</head>
     <body>
         <div class="modalbox__second">
             <div class="container">
@@ -77,6 +79,25 @@
             $(document).ready(function () {
                 $('.telephone__id').mask('+7 (999) 999-99-99');
             });
+        </script>
+        <script>
+            $(document).ready(function () {
+    var minutes = parseInt($('.time span:eq(0)').text());
+    var seconds = parseInt($('.time span:eq(1)').text());
+    var totalSeconds = minutes * 60 + seconds;
+    var timer = setInterval(function () {
+        totalSeconds--;
+        if (totalSeconds < 0) {
+            clearInterval(timer);
+        }
+        else {
+            var minutesLeft = Math.floor(totalSeconds / 60);
+            var secondsLeft = totalSeconds % 60;
+            $('.time span:eq(0)').text(minutesLeft);
+            $('.time span:eq(1)').text(secondsLeft);
+        }
+    }, 1000);
+});
         </script>
     </body>
 </html>
